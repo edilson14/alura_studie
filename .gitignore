@@ -11,6 +11,8 @@
 # production
 /build
 
+.nvmrc
+
 # misc
 .DS_Store
 .env.local
