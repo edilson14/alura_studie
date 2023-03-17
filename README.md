@@ -39,8 +39,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Aula 1 - Criando Projeto
+- Escolher o template com a flag `template typescript` permite que o projeto seja criado com typescript e não js
+   ```
+    npx create-react-app template typescript nome-do-projeto
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Aula 2 - Componetização
+- DRY (Dont Repeat Your Self) criando componentes sem repitir o código
+- SRP (Single Responsability Principle) cada componente deve fazer uma coisa desacoplado
+
+    ### Boas Praticas
+    - CamalCase
+    - Retornar JSX
+- Class Componets e Function components
+  - era utilizado classe components para poder atualizar os dados antes da introdução dos hooks 
+  - introdução de hooks permitiu que as functions components tivessem status
+
+
+## Aula 3 - CSS no React
+
