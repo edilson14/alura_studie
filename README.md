@@ -59,4 +59,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 
 ## Aula 3 - CSS no React
+- Inline style não recomendado funciona com duas chaves (notação de objetos )
+- React usa className em vez de class
+- usar sass no lugar de csss
+  - declaração de variaveis
+  - sintaxe alinhada
+  - dividir as importações e estelização
+  - inclusão de mixin
+  - documentação e comunidade para suporte
 
+- CSS Modules
+  - caso a gente tenha duas classes com o mesmo nome , ele evite que tenha duas classes com o mesmo nome , adicionando uma hash no final
