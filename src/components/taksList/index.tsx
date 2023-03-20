@@ -1,9 +1,12 @@
 import React from "react";
+//Styles
+import styles from './TaskList.module.scss'
+
 
 //INTERFACES
 import ITasks from "../../models/tasks";
 
-export default function List() {
+export default function TasksList() {
     const allTaks: Array<ITasks> = [{
         description: 'estudar React',
         time: '02:30:00'
@@ -11,7 +14,7 @@ export default function List() {
 
 
     const renderTaks = (task: ITasks, key: number) => (<>
-        <li key={key}>
+        <li key={key} className={styles.item}>
             <h3>
                 {task.description}
             </h3>
@@ -22,7 +25,7 @@ export default function List() {
     </>)
 
     return (
-        <aside>
+        <aside className={styles.tasksList}>
             <h2>Estudos do dia</h2>
             <ul>
                 {
