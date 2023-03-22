@@ -33,17 +33,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
 
 ## Aula 1 - Criando Projeto
 - Escolher o template com a flag `template typescript` permite que o projeto seja criado com typescript e não js
    ```
-    npx create-react-app template typescript nome-do-projeto
+    npx create-react-app nome-do-projeto --template typescript 
   ```
 
 ## Aula 2 - Componetização
@@ -70,3 +64,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 - CSS Modules
   - caso a gente tenha duas classes com o mesmo nome , ele evite que tenha duas classes com o mesmo nome , adicionando uma hash no final
+
+
+## Aula 4 - Props
+- Compartilhando e costumisando componentes de forma diferente
+- utilização de key para a renderização do virtual dom
+  - não é aconselhado utilizar index do array para evitar re-renderização desnecessaria
+  - como explicado nesse [artigo](https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/) pode causar varios efeitos

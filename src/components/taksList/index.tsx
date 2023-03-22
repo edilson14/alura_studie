@@ -1,10 +1,10 @@
-import React from "react";
 //Styles
 import styles from './TaskList.module.scss'
 
 
 //INTERFACES
 import ITasks from "../../models/tasks";
+import TaskItem from "./TaskItem";
 
 export default function TasksList() {
     const allTaks: Array<ITasks> = [{
@@ -13,16 +13,9 @@ export default function TasksList() {
     }];
 
 
-    const renderTaks = (task: ITasks, key: number) => (<>
-        <li key={key} className={styles.item}>
-            <h3>
-                {task.description}
-            </h3>
-            <span>
-                {task.time}
-            </span>
-        </li>
-    </>)
+    const renderTaks = (task: ITasks, key: number) => (
+        <TaskItem key={key} task={task} />
+    )
 
     return (
         <aside className={styles.tasksList}>

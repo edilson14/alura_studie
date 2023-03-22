@@ -23,7 +23,7 @@ export default class TasksForm extends React.Component {
                     <input type="time" name="time" id="time" step="1" required min="00:00:00" max="01:30:00" />
                 </div>
 
-                <Button />
+                <Button label={'Adicionar'} />
             </form>
 
         );
