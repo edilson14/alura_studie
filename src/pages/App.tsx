@@ -1,17 +1,21 @@
-import React from 'react';
-
-//COMPONENTES
+import React, { useState } from 'react';
 import Forms from '../components/Forms';
-import TasksList from '../components/taksList';
+import TasksList from '../components/List';
+import Timer from '../components/Timer';
+import style from './App.module.scss';
+import ITasks from '../types/tasks';
 
-import styles from './App.module.scss';
+function App() {
+  const [tasks, setTasks] = useState<ITasks[]>([])
 
-export default function App() {
+
   return (
-    <div className={styles.AppStyles} >
-      <Forms />
-      <TasksList />
+    <div className={style.AppStyle}>
+      <Forms setTarefas={setTasks} />
+      <TasksList tasks={tasks} />
+      <Timer />
     </div>
   );
 }
 
+export default App;

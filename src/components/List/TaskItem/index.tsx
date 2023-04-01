@@ -1,5 +1,5 @@
-import ITasks from "../../../models/tasks";
-import styles from '../TaskList.module.scss'
+import ITasks from "../../../types/tasks";
+import styles from './TaskItem.module.scss'
 
 
 interface ItemProp {

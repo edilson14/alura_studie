@@ -71,3 +71,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - utilização de key para a renderização do virtual dom
   - não é aconselhado utilizar index do array para evitar re-renderização desnecessaria
   - como explicado nesse [artigo](https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/) pode causar varios efeitos
+
+## Aula 5 - State
+- compente que possui a variavel state ela muda quando o state muda
+  - useState - hook retorna o estado atual e a função de atualizar o novo estado
+  
